@@ -1,0 +1,121 @@
+.serv {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: 185px 100px 1400px;
+
+    .title_box {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color1;
+        padding: 10px;
+
+        .about_title {
+            margin-top: 8px;
+            font-family: $rubik;
+            font-weight: 400px;
+            color: $color8;
+        }
+    }
+
+    .text_box {
+        height: 1280px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: $color8;
+        padding-bottom: 20px;
+
+        .serv_txt {
+            height: 140px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            font-family: $rubik;
+            font-weight: 500;
+
+            .servp_1 {
+                height: fit-content;
+                margin-bottom: 0;
+            }
+
+            .servp_2 {
+                height: fit-content;
+                margin-bottom: 0;
+            }
+
+            .servp_3 {
+                height: fit-content;
+                margin-bottom: 0;
+            }
+
+            .servp_4 {
+                height: fit-content;
+                margin-bottom: 0;
+            }
+
+        }
+
+        .img {
+            height: 200px;
+            border: 1px solid #000;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img1 {
+            background-image: url(../media/alejo1.jpg);
+        }
+
+        .img2 {
+            background-image: url(../media/alejo2.jpg);
+        }
+
+        .img3 {
+            background-image: url(../media/alejo3.jpg);
+        }
+
+        .img4 {
+            background-image: url(../media/alejo4.jpg);
+        }
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .about {
+        grid-template-rows: 310px 100px 900px;
+
+        .text_box {
+            height: 900px;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(4, 220px);
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 20px;
+            .aboutp{
+                font-size: 23px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .about {
+        grid-template-rows: 110px 100px 450px;
+
+        .text_box {
+            height: 450px;
+            padding-bottom: 20px;
+            margin: 0 5px;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(2, 220px);
+            align-items: center;
+            justify-content: center;
+            .aboutp{
+                font-size: 15px;
+            }
+        }
+    }
+}
