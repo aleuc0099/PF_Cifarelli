@@ -63,6 +63,15 @@ a {
   height: fit-content;
 }
 
+.main3 {
+  text-align: center;
+  background-color: rgb(241, 229, 250);
+  justify-content: center;
+  padding: 0px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 header {
   background-color: rgb(180, 153, 199);
   border-bottom: 5px solid #BF5FE8;
@@ -500,7 +509,7 @@ header .sign_in_button .inscribite:hover {
 .serv {
   display: grid;
   grid-template-columns: repeat(1, 100%);
-  grid-template-rows: 185px 100px 1400px;
+  grid-template-rows: 185px 100px 1650px;
 }
 .serv .title_box {
   height: 100px;
@@ -510,14 +519,15 @@ header .sign_in_button .inscribite:hover {
   background-color: #915FE8;
   padding: 10px;
 }
-.serv .title_box .about_title {
+.serv .title_box .serv_title {
   margin-top: 8px;
   font-family: "Rubik", sans-serif;
   font-weight: 400px;
   color: rgb(241, 229, 250);
 }
 .serv .text_box {
-  height: 1280px;
+  height: -moz-fit-content;
+  height: fit-content;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -525,32 +535,32 @@ header .sign_in_button .inscribite:hover {
   padding-bottom: 20px;
 }
 .serv .text_box .serv_txt {
-  height: 140px;
+  height: 200px;
   display: flex;
+  flex-flow: column;
+  justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
 }
-.serv .text_box .serv_txt .servp_1 {
+.serv .text_box .serv_txt h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(241, 229, 250);
+  background-color: #665FE8;
+  padding: 10px 10px;
+  border-radius: 40px;
+}
+.serv .text_box .serv_txt p {
+  margin-top: 20px;
+  margin-bottom: 0;
   height: -moz-fit-content;
   height: fit-content;
-  margin-bottom: 0;
 }
 .serv .text_box .serv_txt .servp_2 {
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-bottom: 0;
-}
-.serv .text_box .serv_txt .servp_3 {
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-bottom: 0;
-}
-.serv .text_box .serv_txt .servp_4 {
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-bottom: 0;
+  margin-top: 30px;
 }
 .serv .text_box .img {
   height: 200px;
@@ -560,23 +570,23 @@ header .sign_in_button .inscribite:hover {
   background-size: cover;
 }
 .serv .text_box .img1 {
-  background-image: url(../media/alejo1.jpg);
+  background-image: url(../media/clases.jpg);
 }
 .serv .text_box .img2 {
-  background-image: url(../media/alejo2.jpg);
+  background-image: url(../media/apoyo.jpg);
 }
 .serv .text_box .img3 {
-  background-image: url(../media/alejo3.jpg);
+  background-image: url(../media/examen.jpg);
 }
 .serv .text_box .img4 {
-  background-image: url(../media/alejo4.jpg);
+  background-image: url(../media/conversation.jpg);
 }
 
 @media only screen and (min-width: 760px) {
-  .about {
+  .serv {
     grid-template-rows: 310px 100px 900px;
   }
-  .about .text_box {
+  .serv .text_box {
     height: 900px;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(4, 220px);
@@ -584,15 +594,15 @@ header .sign_in_button .inscribite:hover {
     justify-content: center;
     padding-bottom: 20px;
   }
-  .about .text_box .aboutp {
+  .serv .text_box .serv_txt {
     font-size: 23px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .about {
+  .serv {
     grid-template-rows: 110px 100px 450px;
   }
-  .about .text_box {
+  .serv .text_box {
     height: 450px;
     padding-bottom: 20px;
     margin: 0 5px;
@@ -601,7 +611,7 @@ header .sign_in_button .inscribite:hover {
     align-items: center;
     justify-content: center;
   }
-  .about .text_box .aboutp {
+  .serv .text_box .serv_txt {
     font-size: 15px;
   }
 }
