@@ -1,0 +1,184 @@
+header {
+    background-color: $color7;
+    border-bottom: 5px solid $color3;
+    align-items: center;
+    height: 180px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 2;
+
+    .logo_father {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+
+        .logo_son {
+            height: 50px;
+            text-align: center;
+            font-family: "Allerta Stencil", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            padding-left: 10px;
+            transition: 0.7s;
+
+            img {
+                height: 50px;
+                width: 50px;
+            }
+
+            a {
+                color: black;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+
+                span {
+                    color: $color1;
+                }
+            }
+        }
+
+        .logo_son:hover {
+            transform: scale(1.5);
+        }
+    }
+
+    nav {
+        text-align: center;
+        font-family: $rubik;
+        font-optical-sizing: auto;
+        font-size: 12px;
+        font-weight: bold;
+        font-style: normal;
+        display: flex;
+        padding-top: 10px;
+
+        .iz {
+            padding-right: 10px;
+        }
+
+        .nav_left {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 5px;
+            list-style: none;
+
+            li {
+                transition: 0.1s;
+
+                a {
+                    text-align: center;
+                    color: black;
+                    text-transform: capitalize;
+                }
+
+                a:hover {
+                    color: $color1;
+                    text-shadow: 0 0 1px $color1;
+                    transition: 0.3s;
+                }
+            }
+
+            li:hover {
+                transform: scale(1.2);
+            }
+        }
+
+
+        .nav_right {
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 5px;
+            list-style: none;
+
+            li {
+                transition: 0.1s;
+
+                a {
+                    text-align: center;
+                    color: black;
+                    text-transform: capitalize;
+                }
+
+                a:hover {
+                    color: $color1;
+                    text-shadow: 0 0 1px $color1;
+                    transition: 0.3s;
+                }
+            }
+
+            li:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .sign_in_button {
+        display: flex;
+        justify-content: center;
+
+        .inscribite {
+            color: $color8;
+            text-align: center;
+            padding: 10px 15px;
+            border: 1px solid black;
+            background-color: $color1;
+            border-radius: 30px;
+            text-transform: uppercase;
+            font-family: $madimi;
+            font-weight: 400;
+            font-style: normal;
+            transition: 0.3s;
+        }
+
+        .inscribite:hover {
+            box-shadow: 0 0 5px black;
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    header {
+        height: 300px;
+
+        .logo_father {
+            height: 100px !important;
+
+            .logo_son {
+                font-size: 40px;
+                height: 100px !important;
+
+                img {
+                    height: 100px !important;
+                    width: 100px !important;
+                }
+            }
+        }
+
+        nav {
+            .iz {
+                padding-right: 20px;
+            }
+
+            li a {
+                font-size: 30px;
+            }
+
+            .nav_left {
+                padding-right: 10px;
+            }
+
+            .nav_right {
+                padding-left: 10px;
+            }
+        }
+
+        .sign_in_button {
+            .inscribite {
+                margin-top: 10px;
+                font-size: 35px;
+            }
+        }
+    }
+}

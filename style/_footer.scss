@@ -1,0 +1,63 @@
+footer {
+    height: 160px;
+    background-color: $color1;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: $color8;
+    border-top: 5px solid $color3;
+
+    .redes_father {
+        height: 64px;
+        align-items: center;
+
+        .redes_son {
+            .redes_txt {
+                text-transform: uppercase;
+                font-family: "Rubik", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: bold;
+                font-style: normal;
+            }
+
+            .red_icon {
+                background-color: $color8;
+                padding: 1px 5px 2px 5px;
+                border-radius: 90px;
+            }
+        }
+    }
+
+    .derechos_father {
+        height: 64px;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 760px){
+    footer{
+        height: 250px;
+        padding-top: 28px;
+        .redes_father {
+            height: 106px;
+    
+            .redes_son {
+                .redes_txt {
+                    font-size: 30px;
+                }
+    
+                .red_icon {
+                    font-size: 30px;
+                    padding: 2px 10px 4px 10px;
+                }
+            }
+        }
+        .derechos_father {
+            height: 106px;
+            padding-top: 20px;
+            .derechos_son{
+                font-size: 30px;
+            }
+        }
+    }
+}

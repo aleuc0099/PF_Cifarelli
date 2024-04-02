@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+    .madimi-one-regular {
+        font-family: "Madimi One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .rubik {
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .allerta-stencil-regular {
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*/
+
+/* colors */
+
+$color1: #915FE8;
+$color2: #E85FE1;
+$color3: #BF5FE8;
+$color4: #665FE8;
+$color5: #E85F8F;
+$color6: #D194EB;
+$color7: rgb(180, 153, 199);
+$color8: rgb(241, 229, 250);
+
+/* fonts */
+
+$logo_font: "Allerta Stencil",
+sans-serif;
+$rubik: "Rubik",
+sans-serif;
+$madimi: "Madimi One",
+sans-serif;
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.subir {
+    height: 40px;
+    width: 40px;
+    background-color: $color1;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px $color2;
+}
+
+.main {
+    text-align: center;
+    background-color: $color8;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: 200px 500px 500px 500px;
+    justify-content: center;
+    height: fit-content;
+}
+
+.main2 {
+    text-align: center;
+    background-color: $color8;
+    justify-content: center;
+    padding: 0px;
+    height: fit-content;
+}
+
+// import
+@import "_header";
+@import "_box";
+@import "_about";
+@import "_footer";
+
+
+@media only screen and (min-width: 760px) {
+    .main {
+        grid-template-rows: 300px 500px 500px 500px;
+    }
+}
