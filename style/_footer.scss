@@ -34,29 +34,65 @@ footer {
     }
 }
 
-@media only screen and (min-width: 760px){
-    footer{
+@media only screen and (min-width: 760px) {
+    footer {
         height: 250px;
         padding-top: 28px;
+
         .redes_father {
             height: 106px;
-    
+
             .redes_son {
                 .redes_txt {
                     font-size: 30px;
                 }
-    
+
                 .red_icon {
                     font-size: 30px;
                     padding: 2px 10px 4px 10px;
                 }
             }
         }
+
         .derechos_father {
             height: 106px;
             padding-top: 20px;
-            .derechos_son{
+
+            .derechos_son {
                 font-size: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    footer {
+        height: 125px;
+        padding: 0 !important;
+        padding-top: 10px !important;
+
+        .redes_father {
+            height: 53px;
+
+            .redes_son {
+                .redes_txt {
+                    font-size: 15px;
+                    margin: 0;
+                }
+
+                .red_icon {
+                    font-size: 15px;
+                    padding: 1px 5px 2px 5px;
+                }
+            }
+        }
+
+        .derechos_father {
+            height: 53px;
+            padding-top: 10px;
+
+            .derechos_son {
+                font-size: 15px;
             }
         }
     }

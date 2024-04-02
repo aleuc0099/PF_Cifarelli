@@ -34,7 +34,7 @@ a {
   background-color: #915FE8;
   position: fixed;
   bottom: 15px;
-  right: 15px;
+  right: 25px;
   text-align: center;
   color: rgb(0, 0, 0);
   font-size: 30px;
@@ -480,20 +480,21 @@ header .sign_in_button .inscribite:hover {
     font-size: 23px;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1000px) {
   .about {
-    grid-template-rows: 310px 100px 450px;
+    grid-template-rows: 110px 100px 450px;
   }
   .about .text_box {
     height: 450px;
+    padding-bottom: 20px;
+    margin: 0 5px;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(2, 220px);
     align-items: center;
     justify-content: center;
-    padding-bottom: 20px;
   }
   .about .text_box .aboutp {
-    font-size: 23px;
+    font-size: 15px;
   }
 }
 footer {
@@ -547,6 +548,31 @@ footer .derechos_father {
   }
   footer .derechos_father .derechos_son {
     font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  footer {
+    height: 125px;
+    padding: 0 !important;
+    padding-top: 10px !important;
+  }
+  footer .redes_father {
+    height: 53px;
+  }
+  footer .redes_father .redes_son .redes_txt {
+    font-size: 15px;
+    margin: 0;
+  }
+  footer .redes_father .redes_son .red_icon {
+    font-size: 15px;
+    padding: 1px 5px 2px 5px;
+  }
+  footer .derechos_father {
+    height: 53px;
+    padding-top: 10px;
+  }
+  footer .derechos_father .derechos_son {
+    font-size: 15px;
   }
 }
 @media only screen and (min-width: 760px) {
