@@ -226,7 +226,8 @@ header .sign_in_button .inscribite:hover {
   header {
     height: -moz-fit-content;
     height: fit-content;
-    display: grid !important;
+    width: 100vw !important;
+    display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 100px;
     margin: 0 !important;
@@ -677,6 +678,9 @@ footer .derechos_father {
   footer .redes_father {
     height: 53px;
   }
+  footer .redes_father .redes_son {
+    padding-right: 0;
+  }
   footer .redes_father .redes_son .redes_txt {
     font-size: 15px;
     margin: 0;
@@ -691,6 +695,7 @@ footer .derechos_father {
   }
   footer .derechos_father .derechos_son {
     font-size: 15px;
+    padding-right: 0;
   }
 }
 @media only screen and (min-width: 760px) {
