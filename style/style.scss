@@ -42,6 +42,12 @@ sans-serif;
 $madimi: "Madimi One",
 sans-serif;
 
+/* style start */
+
+body{
+    height: 100vh;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -109,5 +115,17 @@ a {
         grid-template-rows: 100px 250px 250px;
         grid-template-areas: "a1 a1" "a2 a3" "a4 a5";
         align-items: center;
+    }
+}
+
+@media only screen and (min-height: 725px) {
+    .main, .main2, .main3 {
+        min-height: calc(100% - 125px);
+    }
+}
+
+@media only screen and (min-height: 725px) and (min-width: 1000px) {
+    .main{
+        grid-template-rows: 20% 250px 250px;
     }
 }
