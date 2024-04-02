@@ -213,6 +213,63 @@ header .sign_in_button .inscribite:hover {
     font-size: 35px;
   }
 }
+@media only screen and (min-width: 1000px) {
+  header {
+    height: -moz-fit-content;
+    height: fit-content;
+    display: grid !important;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 100px;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  header .logo_father {
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
+  header .logo_father .logo_son {
+    font-size: 25px;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
+  header .logo_father .logo_son img {
+    height: 60px !important;
+    width: 60px !important;
+  }
+  header .logo_son:hover {
+    transform: scale(1.2) !important;
+  }
+  header nav {
+    justify-content: space-evenly;
+    padding-top: 0 !important;
+  }
+  header nav .iz {
+    padding-right: 20px;
+  }
+  header nav li a {
+    font-size: 20px;
+  }
+  header nav .nav_left {
+    justify-content: space-evenly;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  header nav .nav_right {
+    justify-content: space-evenly;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  header .sign_in_button {
+    display: grid;
+    justify-content: center;
+  }
+  header .sign_in_button .inscribite {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
 .box {
   height: 450px;
   margin: 15px 0px 15px 0px;
@@ -285,6 +342,51 @@ header .sign_in_button .inscribite:hover {
   }
   .box_content .comenzar {
     font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .empty_box {
+    grid-area: a1;
+  }
+  #box_one {
+    grid-area: a2;
+  }
+  #box_two {
+    grid-area: a3;
+  }
+  #box_three {
+    grid-area: a4;
+  }
+  #box_four {
+    grid-area: a5;
+  }
+  .box {
+    height: 200px;
+    margin: 0px 20px;
+  }
+  .box .box_content .title_box {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .box .box_content .title_box h1 {
+    font-size: 25px;
+    margin: 0;
+    padding: 5px;
+    padding-bottom: 7px;
+  }
+  .box .box_content .description {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  .box .box_content .comenzar_button {
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .box .box_content .comenzar_button .comenzar {
+    font-size: 13px;
   }
 }
 .about {
@@ -450,5 +552,14 @@ footer .derechos_father {
 @media only screen and (min-width: 760px) {
   .main {
     grid-template-rows: 300px 500px 500px 500px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .main {
+    padding: 0 !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 250px 250px;
+    grid-template-areas: "a1 a1" "a2 a3" "a4 a5";
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */

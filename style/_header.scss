@@ -182,3 +182,68 @@ header {
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    header {
+        height: fit-content;
+        display: grid !important;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 100px;
+        margin: 0 !important;
+        padding: 0 !important;
+
+        .logo_father {
+            height: fit-content !important;
+
+            .logo_son {
+                font-size: 25px;
+                height: fit-content !important;
+
+                img {
+                    height: 60px !important;
+                    width: 60px !important;
+                }
+            }
+        }
+
+        .logo_son:hover {
+            transform: scale(1.2) !important;
+        }
+
+        nav {
+            justify-content: space-evenly;
+            padding-top: 0 !important;
+
+            .iz {
+                padding-right: 20px;
+            }
+
+            li a {
+                font-size: 20px;
+            }
+
+            .nav_left {
+                justify-content: space-evenly;
+                padding: 0;
+                margin-bottom: 0;
+            }
+
+            .nav_right {
+                justify-content: space-evenly;
+                padding: 0;
+                margin-bottom: 0;
+            }
+        }
+
+        .sign_in_button {
+            display: grid;
+            justify-content: center;
+
+            .inscribite {
+                width: fit-content;
+                margin-top: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+}
