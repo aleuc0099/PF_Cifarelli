@@ -73,7 +73,6 @@ a {
   background-color: rgb(241, 229, 250);
   justify-content: center;
   padding: 0px;
-  margin-bottom: 10px;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -625,7 +624,7 @@ header .sign_in_button .inscribite:hover {
 .que {
   display: grid;
   grid-template-columns: repeat(1, 100%);
-  grid-template-rows: 185px 100px 700px;
+  grid-template-rows: 185px 100px 820px;
 }
 .que .title_box {
   height: 100px;
@@ -656,17 +655,24 @@ header .sign_in_button .inscribite:hover {
 }
 .que .text_box section .container .fst_box .snd_box p {
   color: #000 !important;
+  font-family: "Rubik", sans-serif;
   font-size: 20px;
 }
 .que .text_box section .container .fst_box .snd_box .form_box {
   background-color: #915FE8 !important;
 }
 .que .text_box section .container .fst_box .snd_box .form_box label {
-  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
   font-weight: 500 !important;
 }
 .que .text_box section .container .fst_box .snd_box .form_box input {
+  font-family: "Rubik", sans-serif;
   background-color: rgb(241, 229, 250);
+}
+.que .text_box section .container .fst_box .snd_box button {
+  background-color: #665FE8;
+  border: 1px solid #BF5FE8;
 }
 
 @media only screen and (min-width: 760px) {
@@ -806,7 +812,6 @@ footer .derechos_father {
 @media only screen and (min-height: 725px) {
   .main .main2 .main3 {
     min-height: calc(100% - 125px);
-    margin-bottom: 0 !important;
   }
 }
 @media only screen and (min-height: 725px) and (min-width: 1000px) {

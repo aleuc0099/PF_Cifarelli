@@ -1,7 +1,7 @@
 .que {
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: 185px 100px 700px;
+    grid-template-rows: 185px 100px 820px;
 
     .title_box {
         height: 100px;
@@ -26,31 +26,44 @@
         justify-content: center;
         background-color: $color8;
         padding-bottom: 20px;
-        section{
+
+        section {
             margin-top: 20px;
             background-color: $color8 !important;
-            .container{
-                .fst_box{
-                    .snd_box{
-                        p{
+
+            .container {
+                .fst_box {
+                    .snd_box {
+                        p {
                             color: #000 !important;
+                            font-family: $rubik;
                             font-size: 20px;
                         }
                     }
                 }
             }
-            .container{
-                .fst_box{
-                    .snd_box{
-                        .form_box{
+
+            .container {
+                .fst_box {
+                    .snd_box {
+                        .form_box {
                             background-color: $color1 !important;
-                            label{
-                                font-size: 20px;
+
+                            label {
+                                font-family: $rubik;
+                                font-size: 30px;
                                 font-weight: 500 !important;
                             }
-                            input{
+
+                            input {
+                                font-family: $rubik;
                                 background-color: $color8;
                             }
+                        }
+
+                        button {
+                            background-color: $color4;
+                            border: 1px solid $color3;
                         }
                     }
                 }
@@ -58,6 +71,7 @@
         }
     }
 }
+
 
 @media only screen and (min-width: 760px) {
     .que {
@@ -68,7 +82,8 @@
             align-items: center;
             justify-content: center;
             padding-bottom: 20px;
-            .serv_txt{
+
+            .serv_txt {
                 font-size: 23px;
             }
         }
@@ -85,7 +100,8 @@
             margin: 0 5px;
             align-items: center;
             justify-content: center;
-            .serv_txt{
+
+            .serv_txt {
                 font-size: 15px;
             }
         }
