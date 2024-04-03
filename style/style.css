@@ -49,32 +49,32 @@ a {
 }
 
 .main {
+  height: -moz-fit-content;
+  height: fit-content;
   text-align: center;
   background-color: rgb(241, 229, 250);
   display: grid;
   grid-template-columns: repeat(1, 100%);
   grid-template-rows: 200px 500px 500px 500px;
   justify-content: center;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .main2 {
+  height: -moz-fit-content;
+  height: fit-content;
   text-align: center;
   background-color: rgb(241, 229, 250);
   justify-content: center;
   padding: 0px;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .main3 {
+  height: -moz-fit-content;
+  height: fit-content;
   text-align: center;
   background-color: rgb(241, 229, 250);
   justify-content: center;
   padding: 0px;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 header {
@@ -710,6 +710,87 @@ header .sign_in_button .inscribite:hover {
     grid-template-rows: 110px 100px 900px;
   }
 }
+.cour {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-template-rows: 185px 100px 1650px;
+}
+.cour .title_box {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #915FE8;
+  padding: 10px;
+}
+.cour .title_box .cour_title {
+  margin-top: 8px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400px;
+  color: rgb(241, 229, 250);
+}
+.cour .text_box {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(241, 229, 250);
+  padding-bottom: 20px;
+}
+.cour .text_box .cour_txt {
+  height: 200px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+.cour .text_box .cour_txt h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(241, 229, 250);
+  background-color: #665FE8;
+  padding: 10px 10px;
+  border-radius: 40px;
+}
+
+@media only screen and (min-width: 760px) {
+  .cour {
+    grid-template-rows: 310px 100px 900px;
+  }
+  .cour .text_box {
+    height: 900px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 220px);
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .cour .text_box .cour_txt {
+    font-size: 23px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .cour {
+    grid-template-rows: 110px 100px 450px;
+  }
+  .cour .text_box {
+    height: 450px;
+    padding-bottom: 20px;
+    margin: 0 5px;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 220px);
+    align-items: center;
+    justify-content: center;
+  }
+  .cour .text_box .cour_txt {
+    font-size: 15px;
+  }
+}
 footer {
   height: 160px;
   background-color: #915FE8;
@@ -810,12 +891,12 @@ footer .derechos_father {
   }
 }
 @media only screen and (min-height: 725px) {
-  .main .main2 .main3 {
-    min-height: calc(100% - 125px);
+  .main, .main2, .main3 {
+    min-height: calc(100% - 125px) !important;
   }
 }
 @media only screen and (min-height: 725px) and (min-width: 1000px) {
   .main {
-    grid-template-rows: 20% 250px 250px;
+    grid-template-rows: 20% 250px 250px !important;
   }
 }/*# sourceMappingURL=style.css.map */

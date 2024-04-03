@@ -69,29 +69,29 @@ a {
 }
 
 .main {
+    height: fit-content;
     text-align: center;
     background-color: $color8;
     display: grid;
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: 200px 500px 500px 500px;
     justify-content: center;
-    height: fit-content;
 }
 
 .main2 {
+    height: fit-content;
     text-align: center;
     background-color: $color8;
     justify-content: center;
     padding: 0px;
-    height: fit-content;
 }
 
 .main3 {
+    height: fit-content;
     text-align: center;
     background-color: $color8;
     justify-content: center;
     padding: 0px;
-    height: fit-content;
 }
 
 // import
@@ -100,6 +100,7 @@ a {
 @import "_about";
 @import "_services";
 @import "_queries";
+@import "_courses";
 @import "_footer";
 
 
@@ -120,13 +121,13 @@ a {
 }
 
 @media only screen and (min-height: 725px) {
-    .main .main2 .main3 {
-        min-height: calc(100% - 125px);
+    .main, .main2, .main3 {
+        min-height: calc(100% - 125px) !important;
     }
 }
 
 @media only screen and (min-height: 725px) and (min-width: 1000px) {
     .main{
-        grid-template-rows: 20% 250px 250px;
+        grid-template-rows: 20% 250px 250px !important;
     }
 }

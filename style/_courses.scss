@@ -1,0 +1,90 @@
+.cour {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: 185px 100px 1650px;
+
+    .title_box {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color1;
+        padding: 10px;
+
+        .cour_title {
+            margin-top: 8px;
+            font-family: $rubik;
+            font-weight: 400px;
+            color: $color8;
+        }
+    }
+
+    .text_box {
+        height: fit-content;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: $color8;
+        padding-bottom: 20px;
+
+        .cour_txt {
+            height: 200px;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: $rubik;
+            font-weight: 500;
+
+            h3 {
+                margin: 0;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $color8;
+                background-color: $color4;
+                padding: 10px 10px;
+                border-radius: 40px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .cour {
+        grid-template-rows: 310px 100px 900px;
+
+        .text_box {
+            height: 900px;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(4, 220px);
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 20px;
+
+            .cour_txt {
+                font-size: 23px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .cour {
+        grid-template-rows: 110px 100px 450px;
+
+        .text_box {
+            height: 450px;
+            padding-bottom: 20px;
+            margin: 0 5px;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(2, 220px);
+            align-items: center;
+            justify-content: center;
+
+            .cour_txt {
+                font-size: 15px;
+            }
+        }
+    }
+}
