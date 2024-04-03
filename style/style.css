@@ -33,6 +33,10 @@ a {
   color: black;
 }
 
+ul {
+  list-style: none;
+}
+
 .subir {
   height: 40px;
   width: 40px;
@@ -713,82 +717,199 @@ header .sign_in_button .inscribite:hover {
 .cour {
   display: grid;
   grid-template-columns: repeat(1, 100%);
-  grid-template-rows: 185px 100px 1650px;
+  grid-template-rows: 185px 100px 1880px;
 }
 .cour .title_box {
   height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #915FE8;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #915FE8;
 }
 .cour .title_box .cour_title {
   margin-top: 8px;
+  color: rgb(241, 229, 250);
   font-family: "Rubik", sans-serif;
   font-weight: 400px;
-  color: rgb(241, 229, 250);
 }
 .cour .text_box {
   height: -moz-fit-content;
   height: fit-content;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(241, 229, 250);
   padding-bottom: 20px;
+  display: grid;
+  grid-template-rows: 530px 400px 410px 520px;
+  align-items: center;
+  background-color: rgb(241, 229, 250);
+}
+.cour .text_box h3 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  padding: 10px 10px;
+  color: rgb(241, 229, 250);
+  background-color: #665FE8;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 .cour .text_box .cour_txt {
-  height: 200px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 90%;
+  padding: 20px 0;
+  border: 7px solid #665FE8;
+  border-radius: 20px;
+  background-color: rgb(241, 229, 250);
   display: flex;
   flex-flow: column;
+  justify-self: center;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
 }
-.cour .text_box .cour_txt h3 {
+.cour .text_box .cour_txt .cour_sect {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.cour .text_box .cour_txt .cour_sect h4 {
   margin: 0;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: rgb(241, 229, 250);
+}
+.cour .text_box .cour_txt .cour_sect ul {
+  margin: 0;
+  padding: 0;
+}
+.cour .text_box .cour_txt .cour_sect ul li span {
+  color: #E85F8F;
+}
+.cour .text_box .cour_txt .cour_sect .sub_li {
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+.cour .text_box .cour_txt h6 {
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 20px;
+  padding: 10px 0;
   background-color: #665FE8;
-  padding: 10px 10px;
-  border-radius: 40px;
+}
+.cour .text_box .cour_txt h6 span {
+  color: #E85F8F;
+}
+.cour .text_box .cour_txt .ap_lev {
+  margin-top: 10px;
+  width: 100%;
+}
+.cour .text_box .cour_txt .ap_lev h5 {
+  margin-bottom: 0;
+}
+.cour .text_box .cour_txt .ap_lev ul {
+  margin: 0;
+  padding: 0;
+}
+.cour .text_box .cour_txt .ap_disclaimer {
+  width: 100%;
+  margin-top: 10px;
+}
+.cour .text_box .cour_txt .ap_disclaimer h5 {
+  color: rgb(241, 229, 250);
+  margin-bottom: 0;
+  background-color: #665FE8;
+}
+.cour .text_box .cour_txt .ap_disclaimer h4 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding: 5px 0;
+  background-color: #E85F8F;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 800;
+}
+.cour .text_box .cour_txt .prep_ul {
+  margin-top: 10px;
+}
+.cour .text_box .cour_txt .prep_ul ul {
+  padding: 0;
+  margin: 0;
+}
+.cour .text_box .cour_txt .prep_ul ul li {
+  font-size: 19px;
+  -webkit-text-decoration: underline solid #665FE8;
+          text-decoration: underline solid #665FE8;
+}
+.cour .text_box .cour_txt .conv {
+  padding: 0 15px;
+}
+.cour .text_box .cour_txt .conv p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.cour .text_box .cour_txt .conv p span {
+  text-transform: uppercase;
+  color: #E85F8F;
+  font-weight: 800;
+}
+.cour .text_box .cour_txt .sign_in_button2 {
+  margin-top: 25px;
+}
+.cour .text_box .cour_txt .sign_in_button2 .inscribite2 {
+  padding: 10px 15px;
+  color: rgb(241, 229, 250);
+  background-color: #915FE8;
+  border: 1px solid black;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  transition: 0.3s;
+}
+.cour .text_box .cour_txt .sign_in_button2 .inscribite2:hover {
+  box-shadow: 0 0 5px black;
+  transform: scale(1.1);
 }
 
 @media only screen and (min-width: 760px) {
   .cour {
-    grid-template-rows: 310px 100px 900px;
+    grid-template-rows: 310px 100px 1150px;
   }
   .cour .text_box {
-    height: 900px;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(4, 220px);
-    align-items: center;
-    justify-content: center;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 20px;
     padding-bottom: 20px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 550px);
+    justify-content: center;
+    align-items: center;
   }
   .cour .text_box .cour_txt {
-    font-size: 23px;
+    align-self: start;
   }
 }
 @media only screen and (min-width: 1000px) {
   .cour {
-    grid-template-rows: 110px 100px 450px;
+    grid-template-rows: 110px 100px 1150px;
   }
   .cour .text_box {
-    height: 450px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 20px;
     padding-bottom: 20px;
-    margin: 0 5px;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(2, 220px);
-    align-items: center;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 550px);
     justify-content: center;
+    align-items: center;
   }
   .cour .text_box .cour_txt {
-    font-size: 15px;
+    align-self: start;
   }
 }
 footer {
