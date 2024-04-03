@@ -676,7 +676,9 @@ header .sign_in_button .inscribite:hover {
 }
 .que .text_box section .container .fst_box .snd_box button {
   background-color: #665FE8;
+  text-transform: uppercase;
   border: 1px solid #BF5FE8;
+  font-family: "Rubik", sans-serif;
 }
 
 @media only screen and (min-width: 760px) {
