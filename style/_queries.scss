@@ -1,7 +1,7 @@
 .que {
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: 185px 100px 1650px;
+    grid-template-rows: 185px 100px 700px;
 
     .title_box {
         height: 100px;
@@ -26,6 +26,36 @@
         justify-content: center;
         background-color: $color8;
         padding-bottom: 20px;
+        section{
+            margin-top: 20px;
+            background-color: $color8 !important;
+            .container{
+                .fst_box{
+                    .snd_box{
+                        p{
+                            color: #000 !important;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .container{
+                .fst_box{
+                    .snd_box{
+                        .form_box{
+                            background-color: $color1 !important;
+                            label{
+                                font-size: 20px;
+                                font-weight: 500 !important;
+                            }
+                            input{
+                                background-color: $color8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

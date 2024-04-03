@@ -73,6 +73,7 @@ a {
   background-color: rgb(241, 229, 250);
   justify-content: center;
   padding: 0px;
+  margin-bottom: 10px;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -624,7 +625,7 @@ header .sign_in_button .inscribite:hover {
 .que {
   display: grid;
   grid-template-columns: repeat(1, 100%);
-  grid-template-rows: 185px 100px 1650px;
+  grid-template-rows: 185px 100px 700px;
 }
 .que .title_box {
   height: 100px;
@@ -648,6 +649,24 @@ header .sign_in_button .inscribite:hover {
   justify-content: center;
   background-color: rgb(241, 229, 250);
   padding-bottom: 20px;
+}
+.que .text_box section {
+  margin-top: 20px;
+  background-color: rgb(241, 229, 250) !important;
+}
+.que .text_box section .container .fst_box .snd_box p {
+  color: #000 !important;
+  font-size: 20px;
+}
+.que .text_box section .container .fst_box .snd_box .form_box {
+  background-color: #915FE8 !important;
+}
+.que .text_box section .container .fst_box .snd_box .form_box label {
+  font-size: 20px;
+  font-weight: 500 !important;
+}
+.que .text_box section .container .fst_box .snd_box .form_box input {
+  background-color: rgb(241, 229, 250);
 }
 
 @media only screen and (min-width: 760px) {
@@ -785,8 +804,9 @@ footer .derechos_father {
   }
 }
 @media only screen and (min-height: 725px) {
-  .main, .main2, .main3 {
+  .main .main2 .main3 {
     min-height: calc(100% - 125px);
+    margin-bottom: 0 !important;
   }
 }
 @media only screen and (min-height: 725px) and (min-width: 1000px) {
