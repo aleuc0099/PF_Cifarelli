@@ -149,6 +149,7 @@
 
             .conv {
                 padding: 0 15px;
+
                 p {
                     margin-top: 10px;
                     margin-bottom: 0;
@@ -163,6 +164,7 @@
 
             .sign_in_button2 {
                 margin-top: 25px;
+
                 .inscribite2 {
                     padding: 10px 15px;
                     color: $color8;
@@ -199,7 +201,8 @@
             grid-template-rows: repeat(2, 550px);
             justify-content: center;
             align-items: center;
-            .cour_txt{
+
+            .cour_txt {
                 align-self: start;
             }
         }
@@ -218,29 +221,10 @@
             grid-template-rows: repeat(2, 550px);
             justify-content: center;
             align-items: center;
-            .cour_txt{
+
+            .cour_txt {
                 align-self: start;
             }
         }
     }
 }
-
-// @media only screen and (min-width: 1000px) {
-//     .cour {
-//         grid-template-rows: 110px 100px 450px;
-
-//         .text_box {
-//             height: 450px;
-//             padding-bottom: 20px;
-//             margin: 0 5px;
-//             grid-template-columns: repeat(4, 25%);
-//             grid-template-rows: repeat(2, 530px);
-//             align-items: center;
-//             justify-content: center;
-
-//             .cour_txt {
-//                 font-size: 15px;
-//             }
-//         }
-//     }
-// }

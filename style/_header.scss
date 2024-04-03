@@ -1,12 +1,12 @@
 header {
-    background-color: $color7;
-    border-bottom: 5px solid $color3;
-    align-items: center;
     height: 180px;
     padding-top: 20px;
     padding-bottom: 10px;
     position: fixed;
     z-index: 2;
+    align-items: center;
+    background-color: $color7;
+    border-bottom: 5px solid $color3;
 
     .logo_father {
         height: 50px;
@@ -15,11 +15,11 @@ header {
 
         .logo_son {
             height: 50px;
+            padding-left: 10px;
             text-align: center;
             font-family: "Allerta Stencil", sans-serif;
             font-weight: 400;
             font-style: normal;
-            padding-left: 10px;
             transition: 0.7s;
 
             img {
@@ -45,30 +45,30 @@ header {
 
     nav {
         text-align: center;
+        padding-top: 10px;
+        display: flex;
         font-family: $rubik;
         font-optical-sizing: auto;
         font-size: 12px;
         font-weight: bold;
         font-style: normal;
-        display: flex;
-        padding-top: 10px;
 
         .iz {
             padding-right: 10px;
         }
 
         .nav_left {
-            display: flex;
-            justify-content: flex-end;
             padding-right: 5px;
             list-style: none;
+            display: flex;
+            justify-content: flex-end;
 
             li {
                 transition: 0.1s;
 
                 a {
-                    text-align: center;
                     color: black;
+                    text-align: center;
                     text-transform: capitalize;
                 }
 
@@ -86,17 +86,17 @@ header {
 
 
         .nav_right {
-            display: flex;
-            justify-content: flex-start;
             padding-left: 5px;
             list-style: none;
+            display: flex;
+            justify-content: flex-start;
 
             li {
                 transition: 0.1s;
 
                 a {
-                    text-align: center;
                     color: black;
+                    text-align: center;
                     text-transform: capitalize;
                 }
 
@@ -118,12 +118,12 @@ header {
         justify-content: center;
 
         .inscribite {
-            color: $color8;
-            text-align: center;
             padding: 10px 15px;
-            border: 1px solid black;
+            color: $color8;
             background-color: $color1;
+            border: 1px solid black;
             border-radius: 30px;
+            text-align: center;
             text-transform: uppercase;
             font-family: $madimi;
             font-weight: 400;
@@ -146,8 +146,8 @@ header {
             height: 100px !important;
 
             .logo_son {
-                font-size: 40px;
                 height: 100px !important;
+                font-size: 40px;
 
                 img {
                     height: 100px !important;
@@ -186,19 +186,19 @@ header {
 @media only screen and (min-width: 1000px) {
     header {
         height: fit-content;
+        margin: 0 !important;
+        padding: 0 !important;
         width: 100vw !important;
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
         grid-template-rows: 100px;
-        margin: 0 !important;
-        padding: 0 !important;
 
         .logo_father {
             height: fit-content !important;
 
             .logo_son {
-                font-size: 25px;
                 height: fit-content !important;
+                font-size: 25px;
 
                 img {
                     height: 60px !important;
@@ -212,8 +212,8 @@ header {
         }
 
         nav {
-            justify-content: space-evenly;
             padding-top: 0 !important;
+            justify-content: space-evenly;
 
             .iz {
                 padding-right: 20px;
@@ -224,15 +224,15 @@ header {
             }
 
             .nav_left {
-                justify-content: space-evenly;
-                padding: 0;
                 margin-bottom: 0;
+                padding: 0;
+                justify-content: space-evenly;
             }
 
             .nav_right {
-                justify-content: space-evenly;
-                padding: 0;
                 margin-bottom: 0;
+                padding: 0;
+                justify-content: space-evenly;
             }
         }
 

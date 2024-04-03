@@ -5,27 +5,27 @@
 
     .title_box {
         height: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $color1;
         padding: 10px;
+        background-color: $color1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .serv_title {
             margin-top: 8px;
+            color: $color8;
             font-family: $rubik;
             font-weight: 400px;
-            color: $color8;
         }
     }
 
     .text_box {
         height: fit-content;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        background-color: $color8;
         padding-bottom: 20px;
+        background-color: $color8;
+        display: grid;
+        justify-content: center;
+        align-items: center;
 
         .serv_txt {
             height: 200px;
@@ -37,20 +37,20 @@
             font-family: $rubik;
             font-weight: 500;
 
-            h3{
+            h3 {
                 margin: 0;
-                text-transform: uppercase;
-                font-weight: 600;
+                padding: 10px 10px;
                 color: $color8;
                 background-color: $color4;
-                padding: 10px 10px;
                 border-radius: 40px;
+                text-transform: uppercase;
+                font-weight: 600;
             }
 
-            p{
+            p {
+                height: fit-content;
                 margin-top: 20px;
                 margin-bottom: 0;
-                height: fit-content;
             }
 
             .servp_2 {
@@ -90,12 +90,13 @@
 
         .text_box {
             height: 900px;
+            padding-bottom: 20px;
             grid-template-columns: repeat(2, 50%);
             grid-template-rows: repeat(4, 220px);
-            align-items: center;
             justify-content: center;
-            padding-bottom: 20px;
-            .serv_txt{
+            align-items: center;
+
+            .serv_txt {
                 font-size: 23px;
             }
         }
@@ -108,13 +109,14 @@
 
         .text_box {
             height: 450px;
-            padding-bottom: 20px;
             margin: 0 5px;
+            padding-bottom: 20px;
             grid-template-columns: repeat(4, 25%);
             grid-template-rows: repeat(2, 220px);
-            align-items: center;
             justify-content: center;
-            .serv_txt{
+            align-items: center;
+
+            .serv_txt {
                 font-size: 15px;
             }
         }

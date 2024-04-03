@@ -5,27 +5,27 @@
 
     .title_box {
         height: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $color1;
         padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color1;
 
         .que_title {
             margin-top: 8px;
+            color: $color8;
             font-family: $rubik;
             font-weight: 400px;
-            color: $color8;
         }
     }
 
     .text_box {
         height: fit-content;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        background-color: $color8;
         padding-bottom: 20px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: $color8;
 
         section {
             margin-top: 20px;
@@ -56,15 +56,15 @@
                             }
 
                             input {
-                                font-family: $rubik;
                                 background-color: $color8;
+                                font-family: $rubik;
                             }
                         }
 
                         button {
+                            border: 1px solid $color3;
                             background-color: $color4;
                             text-transform: uppercase;
-                            border: 1px solid $color3;
                             font-family: $rubik;
                         }
                     }
@@ -81,9 +81,9 @@
 
         .text_box {
             height: 900px;
-            align-items: center;
-            justify-content: center;
             padding-bottom: 20px;
+            justify-content: center;
+            align-items: center;
 
             .serv_txt {
                 font-size: 23px;
@@ -98,10 +98,10 @@
 
         .text_box {
             height: fit-content;
-            padding-bottom: 20px;
             margin: 0 5px;
-            align-items: center;
+            padding-bottom: 20px;
             justify-content: center;
+            align-items: center;
 
             .serv_txt {
                 font-size: 15px;

@@ -5,27 +5,27 @@
 
     .title_box {
         height: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $color1;
         padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color1;
 
         .about_title {
             margin-top: 8px;
+            color: $color8;
             font-family: $rubik;
             font-weight: 400px;
-            color: $color8;
         }
     }
 
     .text_box {
         height: 1280px;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        background-color: $color8;
         padding-bottom: 20px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: $color8;
 
         .aboutp {
             height: 140px;
@@ -89,12 +89,13 @@
 
         .text_box {
             height: 900px;
+            padding-bottom: 20px;
             grid-template-columns: repeat(2, 50%);
             grid-template-rows: repeat(4, 220px);
-            align-items: center;
             justify-content: center;
-            padding-bottom: 20px;
-            .aboutp{
+            align-items: center;
+
+            .aboutp {
                 font-size: 23px;
             }
         }
@@ -107,16 +108,16 @@
 
         .text_box {
             height: 450px;
-            padding-bottom: 20px;
             margin: 0 5px;
+            padding-bottom: 20px;
             grid-template-columns: repeat(4, 25%);
             grid-template-rows: repeat(2, 220px);
-            align-items: center;
             justify-content: center;
-            .aboutp{
+            align-items: center;
+
+            .aboutp {
                 font-size: 15px;
             }
         }
     }
 }
-
